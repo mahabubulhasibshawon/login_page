@@ -15,7 +15,7 @@ class HomeLoginPage extends StatelessWidget {
         child: Form(
           child: Column(
             children: [
-              TextField(
+              const TextField(
                 decoration: InputDecoration(
                   label: Text('Email'),
                   hintText: 'Type your email'
@@ -28,11 +28,11 @@ class HomeLoginPage extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 60,),
-              ElevatedButton(onPressed: (){}, child: Text('Log in', style: TextStyle(fontWeight: FontWeight.bold),),
+              ElevatedButton(onPressed: (){},
                 style: ElevatedButton.styleFrom(
                   backgroundColor : Colors.blueAccent.shade100,
                   foregroundColor: Colors.white// Set the background color
-              ),)
+              ), child: const Text('Log in', style: TextStyle(fontWeight: FontWeight.bold),),)
             ],
           ),
         ),
