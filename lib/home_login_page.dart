@@ -27,7 +27,7 @@ class HomeLoginPage extends StatelessWidget {
                   hintText: 'Type your password'
                 ),
               ),
-              const SizedBox(height: 60,),
+              const SizedBox(height: 30,),
               ElevatedButton(onPressed: (){},
                 style: ElevatedButton.styleFrom(
                   backgroundColor : Colors.blueAccent.shade100,
